@@ -1,0 +1,3 @@
+class Grocery < ApplicationRecord
+
+end

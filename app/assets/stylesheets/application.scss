@@ -1,0 +1,63 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.container {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.grocery {
+  border: 1px solid black;
+  border-radius: 7px;
+  margin: 3px;
+  padding: 5px;
+  position: relative;
+}
+
+input[type='text'] {
+  margin-left: 30px;
+  font-size: 24px;
+  border: none;
+  width: 80%;
+}
+
+.grocery input[type='checkbox'] {
+  -webkit-appearance: none;
+  border: 1px solid black;
+  padding: 9px;
+  border-radius: 3px;
+  position: relative;
+  top: 2px;
+  left: 4px;
+}
+
+.grocery input[type='checkbox']:checked:after {
+  content: '\2714';
+  font-size: 14px;
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  color: #99a1a7;
+}
+
+.button_to input {
+  border: none;
+  background: none;
+  position: absolute;
+  font-size: 24px;
+  top: 5px;
+  right: 5px;
+}

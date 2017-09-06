@@ -1,0 +1,5 @@
+var groceries = document.getElementById('groceries');
+var grocery = document.createElement('div');
+grocery.innerHTML = "<%= escape_javascript(render partial: 'grocery', locals: {grocery: @grocery}) %>";
+groceries.prepend(grocery);
+document.querySelector('input[type=text]').value = '';

@@ -1,0 +1,8 @@
+<div class="container">
+  <%= form_with(model: @grocery, html: {id: 'new-grocery', class: 'grocery'}) do |f| %>
+    <%= f.text_field :name, placeholder: 'type new groceries here' %>
+  <% end %>
+  <div id="groceries">
+    <%= render partial: "grocery", collection: @groceries %>
+  </div>
+</div>
