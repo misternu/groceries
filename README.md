@@ -1,24 +1,11 @@
-# README
+# Rails Groceries List App (sans jQuery)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails has dropped jQuery as a dependency. I was curious about any differences in ujs without it, so I made this simple rails to-do list app, adding no gems or non-vanilla JavaScript.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+bundle
+bundle exec rails db:create
+bundle exec rails db:migrate
+bundle exec rails s
+open http://localhost:3000
+```
