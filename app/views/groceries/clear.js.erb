@@ -1,0 +1,2 @@
+var groceries = document.getElementById('groceries');
+groceries.innerHTML = "<%= escape_javascript(render partial: 'grocery', collection: @groceries) %>";

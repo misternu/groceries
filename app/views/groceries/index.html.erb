@@ -5,4 +5,5 @@
   <div id="groceries">
     <%= render partial: "grocery", collection: @groceries %>
   </div>
+  <%= button_to "Clear Checked", :clear_groceries, method: :put, remote: true%>
 </div>

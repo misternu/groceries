@@ -1,7 +1,7 @@
 <div class='grocery' data-id="<%= grocery.id %>">
   <%= form_with(model: grocery) do |f| %>
-    <%= f.check_box :checked %>
-    <%= f.text_field :name %>
+    <%= f.check_box :checked, onchange: "this.parentNode.submit()" %>
+    <%= f.text_field :name, onchange: "this.parentNode.submit()" %>
   <% end %>
   <%= button_to "X", grocery_path(grocery), method: :delete, remote: true %>
 </div>
